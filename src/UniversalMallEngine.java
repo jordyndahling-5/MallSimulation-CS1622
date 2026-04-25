@@ -7,7 +7,7 @@ import java.util.Random;
  * This code runs, but it is not OOP nor SOLID friendly. Your goal is to
  * refactor it so that it follows the principles seen in class.
  *
- * You'll have to add Unit tests and Javadoc. You might discover bugs.
+ * You'll have to add Unit tests and Javadoc. You might discover bugs..
  */
 public class UniversalMallEngine {
 
