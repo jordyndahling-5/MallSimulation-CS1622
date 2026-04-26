@@ -23,6 +23,10 @@ public class Main {
         people.add(s1);
         s1.move();
 
+        Drone d1 = new Drone();
+        Systems sy1 = new Systems(d1);
+        sy1.setPower();
+        sy1.fixPower(d1);
 
 
     }
