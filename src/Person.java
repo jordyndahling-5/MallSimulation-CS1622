@@ -1,11 +1,10 @@
 import java.util.ArrayList;
 
-public abstract class Person implements move, status {
+public abstract class Person implements move {
     protected String name;
     protected String storeDesire;
 
     ArrayList<Person> people = new ArrayList<>();
-
 
 
 
@@ -18,6 +17,7 @@ public abstract class Person implements move, status {
     public void printStatus() {
         for (Person p : people) {
             System.out.println("Name: " + p.name + " store: " + p.storeDesire);
-        }
+        } //what is this doing?
     }
+
 }
