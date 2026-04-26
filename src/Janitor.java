@@ -10,8 +10,9 @@ public class Janitor extends Person {
     public void move() {
         desire = "Clean";
         dirt = random.nextInt(10);
+        System.out.println("dirt amount = " + dirt);
         if (dirt >= 5) {
-            System.out.print("Janitor is cleaning");
+            System.out.println("Janitor is cleaning");
         }
     }
 

@@ -11,6 +11,7 @@ public class Mall implements status {
     @Override
     public void printStatus() {
 
+
         //print mall status code
     }
 

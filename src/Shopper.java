@@ -6,10 +6,14 @@ public class Shopper extends Person {
 
     Random random = new Random();
 
+
+
     public Shopper(String name) {
         this.name = name;
 
     }
+
+
 
     /**
      * things that drive a shopper's movement

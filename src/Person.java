@@ -1,11 +1,24 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public abstract class Person implements move {
     protected String name;
     protected String desire;
+    protected int volumeLevel;
 
+    Random random = new Random();
     ArrayList<Person> people = new ArrayList<>();
 
+
+    public int getVolumeLevel() {return volumeLevel;}
+
+
+    public int setVolumeLevel() {
+        volumeLevel = random.nextInt(100);
+        System.out.println("volume level = " + volumeLevel);
+
+        return volumeLevel;
+    }
 
 
     @Override
