@@ -12,4 +12,7 @@ public class Mall implements status {
     public void printStatus() {
         //print mall status code
     }
+
+
+
 }

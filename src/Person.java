@@ -1,6 +1,11 @@
+import java.util.ArrayList;
+
 public abstract class Person implements move, status {
-    protected int x, y; //used for location?
     protected String name;
+    protected String storeDesire;
+
+    ArrayList<Person> people = new ArrayList<>();
+
 
 
 
@@ -11,6 +16,8 @@ public abstract class Person implements move, status {
 
     @Override
     public void printStatus() {
-        //print People status code
+        for (Person p : people) {
+            System.out.println("Name: " + p.name + " store: " + p.storeDesire);
+        }
     }
 }
