@@ -10,17 +10,17 @@ public class VIP extends Shopper {
     public void move() {
         hunger = random.nextInt(3);
         if (hunger == 2) {
-            storeDesire = "Food";
+            desire = "Food";
         } else {
-            storeDesire = "Clothing";
+            desire = "Clothing";
         }
-        System.out.println("VIP " + name + "'s store desire = " + storeDesire);
+        System.out.println("VIP " + name + "'s store desire = " + desire);
 
         money = 200;
-        if (storeDesire.equals("Food")) {
+        if (desire.equals("Food")) {
             money -= (10 - 10 * VIPDiscount);
             System.out.println("VIP " + name + "bought food, current money = " + money);
-        } else if (storeDesire.equals("Clothing")) {
+        } else if (desire.equals("Clothing")) {
             money -= (25 - 25 * VIPDiscount);
             System.out.println("VIP " + name + "bought food, current money = " + money);
         } else {

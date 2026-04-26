@@ -19,20 +19,20 @@ public class Shopper extends Person {
         hunger = random.nextInt(3);
         System.out.println("Hunger = " + hunger);
         if (hunger == 2) {
-            storeDesire = "Food"; //if people are hungry they will get food
+            desire = "Food"; //if people are hungry they will get food
         } else if (hunger == 0) {
-            storeDesire = "Clothing"; //if people are not hungry at all they are more likely to shop
+            desire = "Clothing"; //if people are not hungry at all they are more likely to shop
         } else {
-            storeDesire = "not sure"; //if people are a little hungry (hunger = 1) they will wander
+            desire = "not sure"; //if people are a little hungry (hunger = 1) they will wander
         }
-        System.out.println("Shopper " + name + "'s store desire = " + storeDesire);
+        System.out.println("Shopper " + name + "'s store desire = " + desire);
 
         money = 200;
-        if (storeDesire.equals("Food")) {
+        if (desire.equals("Food")) {
             money -= 10;
             System.out.println("Shopper " + name + " bought food, current money = " + money);
         }
-        else if (storeDesire.equals("Clothing")) {
+        else if (desire.equals("Clothing")) {
             money -= 25;
             System.out.println("Shopper " + name + " bought clothes, current money = " + money);
         }
