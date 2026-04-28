@@ -7,7 +7,6 @@ public abstract class Person implements move {
     protected int volumeLevel;
 
     Random random = new Random();
-    ArrayList<Person> people = new ArrayList<>();
 
 
     public int getVolumeLevel() {return volumeLevel;}
@@ -23,14 +22,8 @@ public abstract class Person implements move {
 
     @Override
     public void move() {
-        //move code
+        //move code (is done in each subclass)
     }
 
-    @Override
-    public void printStatus() {
-        for (Person p : people) {
-            System.out.println("Name: " + p.name + " store: " + p.desire);
-        } //what is this doing?
-    }
 
 }
