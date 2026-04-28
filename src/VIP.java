@@ -5,6 +5,8 @@ public class VIP extends Shopper {
         super(name);
     }
 
+    public double getVIPDiscount() {return VIPDiscount;}
+
 
     @Override
     public void move() {

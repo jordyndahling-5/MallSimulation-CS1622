@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 
 public class Mall {
-    private Person person; //make this a list?
-    private Store store; //make this a list?
+    private Person person;
     private Systems drones; //drones do the system work
 
 

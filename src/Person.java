@@ -9,6 +9,15 @@ public abstract class Person implements move {
     Random random = new Random();
 
 
+    public String getName() {return name;}
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getDesire() {return desire;}
+    public void setDesire(String desire) {
+        this.desire = desire;
+    }
+
     public int getVolumeLevel() {return volumeLevel;}
 
 

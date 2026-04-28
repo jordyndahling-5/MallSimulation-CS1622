@@ -5,6 +5,7 @@ public class Janitor extends Person {
     private int dirt;
     Random random = new Random();
 
+    public int getDirt() {return dirt;}
 
     @Override
     public void move() {
