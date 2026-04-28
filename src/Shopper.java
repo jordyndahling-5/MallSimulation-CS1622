@@ -7,22 +7,39 @@ public class Shopper extends Person {
     Random random = new Random();
 
 
-
+    /**
+     * constructor - instantiates name
+     * @param name
+     */
     public Shopper(String name) {
         this.name = name;
 
     }
 
+    /**
+     * gives double value of money
+     * @return
+     */
     public double getMoney() {return money;}
+
+    /**
+     * sets double value of money
+     * @param money
+     */
     public void setMoney(double money) {
         this.money = money;
     }
+
+    /**
+     * gives integer value for a person's hunger level
+     * @return
+     */
     public int getHunger() {return hunger;}
 
 
 
     /**
-     * things that drive a shopper's movement
+     * things that drive a shopper's movement - picks random number 1-100 for hunger
      */
     @Override
     public void move() {

@@ -1,5 +1,8 @@
 public class Security extends Person {
 
+    /**
+     * things that drive a janitor's movement - checks random number 1-100 for volumeLevel
+     */
     @Override
     public void move() {
         Person p = new Shopper("example");

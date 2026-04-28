@@ -1,13 +1,24 @@
 public class VIP extends Shopper {
     private double VIPDiscount = 0.1;
 
+    /**
+     * cuntructor - initializes name
+     * @param name
+     */
     public VIP(String name) {
         super(name);
     }
 
+    /**
+     * gives double value for the vip discount - vip's get special discount on items
+     * @return
+     */
     public double getVIPDiscount() {return VIPDiscount;}
 
 
+    /**
+     * things that drive a vip shopper's movement - picks random number 1-100 for hunger
+     */
     @Override
     public void move() {
         hunger = random.nextInt(3);

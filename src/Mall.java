@@ -4,9 +4,10 @@ public class Mall {
     private Person person;
     private Systems drones; //drones do the system work
 
-
-
-
+    /**
+     * main function - initializes objects
+     * @param args
+     */
     public static void main(String[] args) {
 
 
